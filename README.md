@@ -1,2 +1,2 @@
-# Projeto-Repositorio
- Projetos realizados para potencializar os estudos
+# projeto-repositorio
+ projetos realizados para potencializar os estudos
