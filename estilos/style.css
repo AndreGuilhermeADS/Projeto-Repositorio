@@ -37,3 +37,11 @@ body{
     left: 205px;
     box-shadow: 0px 0px 12px #494994;
 }
+
+.logo:hover{
+    
+    
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.26);
+    transition: transform 0.5s;
+}
