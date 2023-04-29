@@ -33,15 +33,15 @@ body{
     border-radius: 50%;
     width: 45px;
     position: relative;
-    top: -92px;
+    top: -74px;
     left: 205px;
-    box-shadow: 0px 0px 12px #494994;
+    box-shadow: 0px 0px 9px #444489a5;
 }
 
 .logo:hover{
     
     
-    transform: translate(-3px, -3px);
+    transform: translate(0px, 10px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.26);
-    transition: transform 0.5s;
+    transition: transform 0.8s;
 }
