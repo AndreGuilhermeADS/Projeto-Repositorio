@@ -8,14 +8,9 @@
 
 body{
     background: linear-gradient(-45deg, white , black);
-    width: 100vw;
-    overflow: scroll;
 }
 
 
-main{
-    
-}
 
 .head{
     display: block;
@@ -26,7 +21,7 @@ main{
 }
 
 
-.img-a{
+.section-img-a{
     display: block;
     
 }
@@ -51,10 +46,10 @@ main{
     box-shadow: 0px 0px 9px #444489a5;
 }
 
-.logo:hover{
-    
-    /**/
-   
+main{
+    width: 91vw;
+    height: 200vh;
+    position: relative; 
 }
 
 .titulo{
@@ -64,31 +59,50 @@ main{
     text-shadow: 2px 2px 2px black;
 }
 
-.div-img{
-    display: flex;
-    flex-direction: column;
-    align-items:start;
-    gap: 1.25rem;
+
+
+
+.sec-01{
+    position: relative;
+    top: 20px;
+    left: 08px;
 }
 
+.sec-01-02{
+    margin-top: 20px;
+    margin-left: 30px ;
+}
+
+.sec-01-02 > h2{
+    text-align: left;
+    margin-left: -14px;
+    margin-bottom: 5px;
+
+}
 
 .site{
-
-    width: 150px;
-    height: 140px;
-    margin-left: 25px;
+    width: 130px;
+    height: 120px;
     border: 2px solid black;
     border-radius: 8px;
     box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.689);
 }
 
-.sec-img:nth-child(2n){
-    align-items:end;
+.sec-02{
+   position: absolute;
+   top: 220px;
+   left: 180px;
 }
 
-
-div section > strong{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin
+.sec-02-02{
+    margin-top: 20px;
+    margin-left: 30px ;
 }
+
+.sec-02-02 > h2{
+    text-align: left;
+    margin-left: -12px;
+    margin-bottom: -15px;
+
+}
+
