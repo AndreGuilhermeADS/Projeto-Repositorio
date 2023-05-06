@@ -176,6 +176,27 @@ main{
 
  }
 
+ .sec-05{
+    position: relative;
+    top: 60px;
+    left: 05px;
+ }
+ 
+ .sec-05-02{
+     margin-top: -75px;
+     margin-left: 30px ;
+ }
+ 
+ .sec-05-02 > h2{
+     font-size: 15px;
+     text-align: left;
+     margin-left: 3px;
+     margin-bottom: -15px;
+     color: rgba(255, 255, 255, 0.778);
+     text-shadow: 2px 2px 3px rgba(5, 5, 5, 0.937);
+
+ }
+
 
  footer{
     background-color: rgba(0, 0, 0, 0.763);
