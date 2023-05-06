@@ -15,7 +15,7 @@ body{
 .head{
     display: block;
     background-color: rgba(0, 0, 0, 0.405);
-    margin-top: 25px;
+    margin-top: 30px;
     margin-left: 30px;
     border-radius: 120px;
     height: 55px;
@@ -24,7 +24,7 @@ body{
 
 .sec-header{
     position: absolute;
-    top: 20px;
+    top: 26px;
 }
 
 .section-img-a{
@@ -51,6 +51,7 @@ body{
     top: -55px;
     left: 170px;
     box-shadow: 0px 0px 9px #626280a2;
+    border: 3px solid rgba(65, 58, 58, 0.759);
 }
 
 main{
@@ -70,7 +71,7 @@ main{
 .titulo{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgba(225, 214, 214, 0.772);
+    color: rgba(225, 214, 214, 0.863);
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.69);
 }
 
