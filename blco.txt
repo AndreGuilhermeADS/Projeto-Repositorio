@@ -1,0 +1,210 @@
+Curso HTML5 e CSS3 
+
+Local para achar duvidas: StackOverFlow / css-tricks / w3school
+
+Aula 01 - tag videos: propriedade controls(adiciona controle ao video), dar preferencia a videos em formato de extenção mp4 por ter mais
+compatibilidade com os navegadores atuais 
+
+Aula 02 - tag audio: propriedade controls,   formato mp3 no type é mpeg
+
+Aula 03 - elemento para colocar imagens com legenda
+usar tag semantica que nao possui peso - figure (img(imagem), figcaption(legenda))
+alt = legenda da imagem
+
+Aula 04 - input email(ja vem com validação)
+propiedades dos inputs: 
+placeholder - permite escrever algo dentro do input para instruir o usuário
+required -  Torna obrigatório o preenchimento do campo
+autofocus - ao carregar a pagina do navegador, foca o cursor diretamente para o input desejado 
+
+Aula 5 - Contenteditable - propriedade que permite o usuario ou desenvolvedor alterar um paragrafo
+em tempo real.(obs: com o uso de bd pode ser deixar a alteração salva no site)
+
+HTML Semântico
+
+
+  --------<HEADER>----------------
+|                                                               |
+|---------<NAV>---------------------
+|                                                                |
+----------------------------------------
+
+----<ARTICLE>-----     -<ASIDE>-
+|                                      |   |                     |
+|                                      |   |                     |
+|       <FIGURE>         |   |                      |
+|                                      |   -------------
+|                                      |
+|                                      |  
+------------------------
+
+----<FOOTER>-------
+
+OBS: UMA IMAGEM COM FIGURE TEM VALOR SEMÂNTICO
+
+
+Aula 5 - Details e summary- permite utilizar uma palavra com um significado oculto ou amostra
+
+ex: <details>
+                <summary> Cachorro <summary>
+                <p> É um mamifero ... <p>
+      <details>
+
+obs: para o paragrafo ficar visivel ao carregar o navegador, colocar dentro do details a propriedade: open="open" 
+
+Aula 6 - Datalist (permite mostrar uma lista de opcoes ao usuario ) - normalmente utilizada dentro de um form
+no input colocar ao inves de type a propriedade "list" e no datalist colocar o id com o mesmo nome do list
+ex: 
+     <form>
+        <input    list="animais"      name"animal">
+             <datalist  id="animais">
+                   <options value"cavalo">informação que vai como subtitulo de cavalo <options>
+                    ...
+                    fechamento das tags acima
+
+Aula 7 - progress (barra de progresso) - propriedades principais - value e max
+
+Aula 8- Animações: tem o conceito de keyframes(passo a passo da animação, oq vai acontecer com o elemento na linha do keyframe)
+ex: @keyframes animacao{                                                 no seletor que for alterar colocar a propriedade desejada 
+	from{ background...}                                       ex: { animation-name: animacao
+	to{background...}		                            animation-duration: 5s}
+}
+
+outras formas de declarar animações:
+
+@keyframes animacao3{
+    from{left: 0;} - faz com que a animação nao saia de sua forma estatica brutamente e sim que saia de left 0 ao 200 ja mudando 
+    to{left:200px; background-color: green;}                                                                                                   seu formato indicado no keyframe.
+}
+
+
+
+ 
+@keyframes animacao2{  porcetamgem em cima do tempo indicado no seletor da propriedade alterada 
+    0% {}
+    30% {width: 100px;}
+    60% {background-color: red;}
+    80% {left:100px; background-color: blue;}
+    100% {height: 100px;}
+}
+
+Propriendades do animation:
+*animation-name: animacao2;   - é utilizado para colocar o nome da animation declarado no "keyframes"
+*animation-duration: 4s; - indica o tempo da duração da animação 
+*animation-delay: 1s; indica o tempo que a animação vai de forma estatica ao seu formato indicado no keyframe
+*animation-iteration-count: infinite; - indica que a animação fique de forma infinita a acontecer(pode se usar outros valores: 1, 2, 3 ...)
+
+*animations-timing-function - determina a velocidade com que a animação irá realizar o comando dado no "keyframe"
+tipos: linear(mesma velocidade sempre), ease(rapido no começo e devagar no fim), ease-in(devagar no começo e rapido no final)
+ease-out, ease-in-out.
+ex:
+#animation-div4 {
+    animation-timing-function: linear;
+}
+
+#animation-div5 {
+    animation-timing-function: ease;
+}
+
+shorthand - animation: nome      tempodeduração     timingfunction      delay      iterationcount
+
+Aula 9 - transition - utilizado em conjunto com o hover para adicionar interações nos elementos .
+ex:
+
+.btn{
+    display: block;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.btn:hover{
+    color: #333;
+    background-color: #fff;
+}
+
+Aula 10 - função calc - utilizada para realizar calculos de tamanha.
+ex: .calc{                                                                   pode se fazer (+ - /  *)
+       width: calc(50% + 2px); 
+}
+
+
+Aula 11- gradient - tipos:  linear gradient(2cores no minimo, indicar no inicio o lado), radial gradient(no minimo 2 cores, circle ou radial)
+
+Aulo 12- font_face -
+ @font-face {
+    font-family: "Lage Grafica";
+    src: url(../2_CSS3/fonts/lage_grafica.ttf)
+}
+
+Aula 12 - Media Query
+
+
+
+
+
+
+
+Aula Extra - Positions
+
+Fluxo do HTML - A posição dos elementos, seguindo a ordem das tags.
+Static - Posição padrão dos elementos.
+Relative - Posição que podemos modificar as direções.
+Absolute - Pode se referenciar pela tela ou por algum elemento.
+Fixed - Posição que fixa o elemento na tela.
+Sticky - Uma mistura de fixed com relative.
+
+
+
+    <section class="sec-03">
+            <strong>Projeto Tom's Jass School</strong><br>
+            <a href="https://andreguilhermeads.github.io/projeto-mobile-first/"><img class="site"  src="imagens/Site-tom.jpg" alt="Site Tom's jazz school"></a>
+        </section>
+        <section class="sec-04">
+            <strong>Projeto Rede Social</strong><br>
+            <a href="andreguilhermeads.github.io/"><img class="site" src="imagens/Site-social.jpg" alt="Social"></a>
+        </section>
+
+
+
+
+
+ .sec-04{
+    position: relative;
+    top: 5px;
+    left: 172px;
+ }
+ 
+ .sec-04-02{
+     margin-top: 20px;
+     margin-left: 30px ;
+ }
+ 
+ .sec-04-02 > h2{
+    
+     font-size: 15px;
+     text-align: left;
+     margin-left: -8px;
+     margin-bottom: -15px;
+     color: rgba(255, 255, 255, 0.778);
+    text-shadow: 2px 2px 3px rgba(5, 5, 5, 0.937);
+
+ }
+
+
+ .legenda{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 08px;
+    margin-left: 9px;
+    margin-top: 5px;
+    background-color: black;
+    width: 115px;
+    border-radius: 50px;
+    padding: 3px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase; 
+ }
